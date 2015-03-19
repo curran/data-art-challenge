@@ -12,6 +12,7 @@ This document is a submission for the [Sense Your City Data Art Challenge](http:
 
 ![](images/Block4.png)
 
+The following analysis and visualizations were created using [Alpine](http://alpinenow.com/) by Emilie de Longueau.
 ![](images/AlpineAnalysis.png)
 
 ![](images/BoxPlotMonth.png)
