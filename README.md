@@ -1,9 +1,9 @@
 # data-art-challenge
 
-![](images/Block2.png)
-<center>24 hours of temperature in Geneva.</center>
+|[![](images/Block3.png)](http://bl.ocks.org/curran/015402cce2caa074551e) |
+|:---------------:|
+|[24 hours of temperature in Geneva.](http://bl.ocks.org/curran/015402cce2caa074551e)|
 
-![](images/Block3.png)
 
 ![](images/Block4.png)
 
