@@ -1,6 +1,7 @@
 # data-art-challenge
 
 ![](images/Block2.png)
+<center>24 hours of temperature in Geneva.</center>
 
 ![](images/Block3.png)
 
@@ -8,6 +9,6 @@
 
 ![](images/AlpineAnalysis.png)
 
-![](images/BoxPlot.png)
+![](images/BoxPlotMonth.png)
 
 ![](images/splom.png)
