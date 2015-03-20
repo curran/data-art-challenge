@@ -26,7 +26,6 @@ Combining the first two visualizations and color coding marks by city yields the
 |:---------------:|
 |[24 hours of temperature for all available cities.](http://bl.ocks.org/curran/3b811f05a0ce39d0d7cd)|
 
-
 We wanted to try analyzing this data using [Alpine](http://alpinenow.com/). To do this, the data was first extracted into CSV format, then imported into a Hadoop file system.
 
 |[![](images/Block5.png)](http://bl.ocks.org/curran/c65ce9880826e466d2b0) |
@@ -35,8 +34,19 @@ We wanted to try analyzing this data using [Alpine](http://alpinenow.com/). To d
 
 The following analysis and visualizations were created using by Emilie de Longueau using Alpine. 
 
-<img src="images/AlpineAnalysis.png">
+|<img src="images/AlpineAnalysis.png">|
+|:---------------:|
+|The Alpine workflow that produced the visualizations.|
 
-<img src="images/BoxPlotMonth.png">
+|<img src="images/BoxPlotMonth.png">|
+|:---------------:|
+|A box plot of temperatures for each city over the past month.|
 
-<img src="images/splom.png">
+|<img src="images/splom.png">|
+|:---------------:|
+|A scatter plot matrix revealing interesting patterns.|
+
+At Alpine, we are working on a new interactive visualization runtime environment called [Chiasm](). We thought this data set would be a good test of the system. Here is an interactive variation on the time line and bar chart combination. The gear icon lets you open the configuration editor. Click on numbers and colors in the configuration editor for interactive widgets that let you configure the visualizations. For example, you can edit the color scale used by both visualizations, or edit the title text. A black background is used to reduce energy use if this visualization were to be displayed for a long period of time.
+|[![](images/Block6.png)](http://bl.ocks.org/curran/5a9767b5c23982c89632) |
+|:---------------:|
+|[Visualization using Chiasm.](http://bl.ocks.org/curran/5a9767b5c23982c89632)|
