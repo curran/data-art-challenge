@@ -20,7 +20,7 @@ Since the API only supports accessing data for a single city at a time, we used 
 |:---------------:|
 |[Current temperature in all available cities.](http://bl.ocks.org/curran/015d34d6d3d562877e51)|
 
-Combining the first two visualizations and color coding marks by city yields the following visualization dashboard with a bar chart and line chart.
+Combining the first two visualizations and color coding marks by city yields the following visualization dashboard with a bar chart and line chart. The colors here were [picked automatically](http://bl.ocks.org/curran/dd73d3d8925cdf50df86).
 
 |[![](images/Block4.png)](http://bl.ocks.org/curran/3b811f05a0ce39d0d7cd) |
 |:---------------:|
