@@ -26,6 +26,14 @@ Combining the first two visualizations and color coding marks by city yields the
 |:---------------:|
 |[24 hours of temperature for all available cities.](http://bl.ocks.org/curran/3b811f05a0ce39d0d7cd)|
 
+At Alpine, we are working on a new interactive visualization runtime environment called [Chiasm](https://github.com/curran/chiasm). We thought this data set would be a good test of the system. Here is an interactive variation on the time line and bar chart combination.
+
+|[![](images/Block6.png)](http://bl.ocks.org/curran/5a9767b5c23982c89632) |
+|:---------------:|
+|[Visualization using Chiasm.](http://bl.ocks.org/curran/5a9767b5c23982c89632)|
+
+The gear icon lets you open the configuration editor. Click on numbers and colors in the configuration editor for interactive widgets that let you configure the visualizations. For example, you can edit the color scale used by both visualizations, or edit the title text. Hovering over the line chart causes the bar chart to display data for the selected slice of time only (using [Crossfilter](http://square.github.io/crossfilter/)). A black background is used to reduce energy use if this visualization were to be displayed for a long period of time.
+
 We wanted to try analyzing this data using [Alpine](http://alpinenow.com/). To do this, the data was first extracted into CSV format, then imported into a Hadoop file system.
 
 |[![](images/Block5.png)](http://bl.ocks.org/curran/c65ce9880826e466d2b0) |
@@ -46,14 +54,10 @@ The following analysis and visualizations were created using by Emilie de Longue
 |:---------------:|
 |A scatter plot matrix revealing interesting patterns.|
 
-At Alpine, we are working on a new interactive visualization runtime environment called [Chiasm](https://github.com/curran/chiasm). We thought this data set would be a good test of the system. Here is an interactive variation on the time line and bar chart combination.
+The intriguing patterns that appeared in the scatter plot matrix indicate that there are clusters in the data. We suspected these clusters were cities, and that each city has its own multidimensional "fingerprint". One interesting combination of fields in the scatter plot matrix is temperature vs. humidity. We created the following visualization to confirm our hypothesis that the clusters represent cities. Color represent city. This visualization fetches data at a resolution of 5 minutes in 24 hour chunks. It continually fetches data going back in time, one day at a time.
 
-|[![](images/Block6.png)](http://bl.ocks.org/curran/5a9767b5c23982c89632) |
+|[![](images/Block7.png)](http://bl.ocks.org/curran/a274af1f64dff25ceca1) |
 |:---------------:|
-|[Visualization using Chiasm.](http://bl.ocks.org/curran/5a9767b5c23982c89632)|
+|[A scatter plot with lines.](http://bl.ocks.org/curran/a274af1f64dff25ceca1)|
 
-The gear icon lets you open the configuration editor. Click on numbers and colors in the configuration editor for interactive widgets that let you configure the visualizations. For example, you can edit the color scale used by both visualizations, or edit the title text.
-
-Hovering over the line chart causes the bar chart to display data for the selected slice of time only (using [Crossfilter](http://square.github.io/crossfilter/)).
-
-A black background is used to reduce energy use if this visualization were to be displayed for a long period of time.
+This visualization is an extension of the scatter plot idea with lines. Lines connect points that are adjacent in time. This visualization shows that cities do form clusters in the (temperature, humidity) space, and each has their own unique shape. This visualization also reveals how far back the data goes. It looks like glitch-free data collection began around January 15, 2015. Before this time, one can see anomalies on the data, indicating initial issues with sensor setup.
