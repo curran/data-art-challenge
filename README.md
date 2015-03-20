@@ -47,6 +47,7 @@ The following analysis and visualizations were created using by Emilie de Longue
 |A scatter plot matrix revealing interesting patterns.|
 
 At Alpine, we are working on a new interactive visualization runtime environment called [Chiasm](). We thought this data set would be a good test of the system. Here is an interactive variation on the time line and bar chart combination. The gear icon lets you open the configuration editor. Click on numbers and colors in the configuration editor for interactive widgets that let you configure the visualizations. For example, you can edit the color scale used by both visualizations, or edit the title text. A black background is used to reduce energy use if this visualization were to be displayed for a long period of time.
+
 |[![](images/Block6.png)](http://bl.ocks.org/curran/5a9767b5c23982c89632) |
 |:---------------:|
 |[Visualization using Chiasm.](http://bl.ocks.org/curran/5a9767b5c23982c89632)|
