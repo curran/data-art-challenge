@@ -61,3 +61,13 @@ The intriguing patterns that appeared in the scatter plot matrix indicate that t
 |[A scatter plot with lines.](http://bl.ocks.org/curran/a274af1f64dff25ceca1)|
 
 This visualization is an extension of the scatter plot idea with lines. Lines connect points that are adjacent in time. This visualization shows that cities do form clusters in the (temperature, humidity) space, and each has their own unique shape. This visualization also reveals how far back the data goes. It looks like glitch-free data collection began around January 15, 2015. Before this time, one can see anomalies on the data, indicating initial issues with sensor setup.
+
+The above plot shows so much at once, it is difficult to comprehend. To make the data space easier to navigate, we created this interactive visualization with linked views. In this visualization you can use the bottom line chart to zoom in with the top line chart. This approach is inspired by the D3 Focus+Context Via Brushing example. Brushing in the top line chart causes data for only the brushed region to be shown in the scatter plot. This allows you to focus on specific regions of time.
+
+|[![](images/Block8.png)](http://bl.ocks.org/curran/19d42e98ce25291eb45d) |
+|:---------------:|
+|[An interactive visualization with linked views.](http://bl.ocks.org/curran/19d42e98ce25291eb45d)|
+
+Well it has been fun working with this data, we hope you enjoyed our submission.
+
+-- Curran and Emilie March 20, 2015
